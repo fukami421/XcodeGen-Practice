@@ -1,0 +1,16 @@
+name: XcodeGen-Practice
+
+options:
+  bundleIdPrefix: jp.co.ryu1fukami
+
+targets:
+  XcodeGen-Practice:
+    type: application
+    platform: iOS
+    sources: XcodeGen-Practice
+    setting:
+      base:
+        INFOPLIST_FILE: XcodeGen-Practice/Resources/Info.plist
+    dependencies:
+      - carthage: RxSwift
+      - carthage: RxCocoa
